@@ -1,0 +1,14 @@
+var barre_player=document.querySelector('.barre-lifes')
+var barre_bg=document.querySelector(".barre-lifes")
+
+var attack=document.querySelector('input')
+var hp=100
+var bg_barre=100
+// attaque basique du joueur 1
+attack.addEventListener('click',function(){
+
+    barre_player.innerText=hp
+    barre_bg.style.width=bg_barre+"%"
+    bg_barre=bg_barre-10
+    hp=hp-10
+})
